@@ -1,0 +1,369 @@
+body {
+    font-family: 'Monteserrat', sans-serif;
+    background-image: linear-gradient(#e2b7a6 30%, #fad9d0)
+}
+
+header {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.img-menu {
+    position: relative;
+    width: 20%;
+    margin: 40px 0 50px 40%;
+
+}
+
+.nome-comeco {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.crp-comeco {
+    text-align: center;
+    font-size: 25px;
+    opacity: 0.7;
+}
+
+/* Biografia */
+
+.titulo-sobre {
+    text-align: center;
+    margin: 5em 30px 0 0;
+    font-size: 2em;
+}
+
+.fotogiovanna {
+    float: left;
+    margin: 0px 35px 5px 130px;
+    width: 25%;
+    border-radius: 5% 5% 5% 5%;
+    box-shadow: 0 15px 20px #000000;
+    opacity: 1;
+}
+
+.biografia p{
+    width: 850px;
+    padding: 20px 20px;
+    text-align: justify;
+    margin: 30px 10% 20px 550px;
+    line-height: 2.0;
+}
+
+.botao-whatsapp {
+    width: 0 15% 15% 10%;
+}
+
+/* Serviços Ofertados */
+
+.titulo-serviços {
+    text-align: center;
+    margin: 7em 30px 1em 0;
+    font-size: 2em;
+}
+
+.tipos-atendimento {
+    text-align: center;
+    font-size: 25px;
+    opacity: 0.7;
+}
+
+.servicos {
+    width: 60%;
+    margin: 20px 40px 70px 20%;
+    display: inline-flex;
+}
+
+.avaliacao-psicologica, .avaliacao-psicoterapia {
+    display: inline-block;
+    text-align: center;
+    width: 55%;
+    margin:50px 30px 0px 30px ;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.servicos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.servicos p{
+    text-align: center;
+    line-height: 1.5;
+}
+
+.servicos li:hover h2{
+    font-size: 35px;
+    transition: 1s;
+}
+
+.servicos li:hover{
+    border-color: green;
+}
+
+.img-avaliacao-psicologica {
+    position: static;
+    margin: 15px 0px 25px -12px;
+    width: 80%;
+}
+
+.img-psicoterapia {
+    position: static;
+    margin: 50px 0px 100px -12px;
+    width: 105%;
+}
+
+/*Perguntas Frequentes */
+
+.titulo-perguntas {
+    text-align: center;
+    margin: 2em 30px 1em 0;
+    font-size: 2em;
+}
+
+section {
+    width: 57%;
+    padding: 10px 30px;
+    margin: 20px 40px 70px 20%;
+}
+
+section details summary{
+    background-color: black;
+    padding: 2%;
+    border-bottom: 2px solid #282828;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+section details summary:hover {
+    cursor: pointer;
+}
+
+section details summary:active {
+    color: #c2c2c2;
+    text-decoration: none;
+    user-select: none;
+}
+
+section details p{
+    background-color:#fad9d0;
+    padding: 2%;
+}
+
+/* Localização */
+.titulo-localizacao {
+    text-align: center;
+    margin: 1em 30px 0.5em 0;
+    font-size: 2em;
+}
+
+.descricao-localizacao {
+    text-align: center;
+    font-size: 19px;
+    opacity: 0.7;
+}
+
+.mapa-conteudo{
+    width: 100%;
+    margin: 40px auto;
+}
+
+/* Contato */
+
+.contato h1 {
+    text-align: center;
+    margin: 0 30px 1em 0;
+    font-size: 2em;
+}
+
+.contato ul {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    margin: 10px 0px 10px 39%;
+    gap: 40px;
+}
+
+.contato ul li {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 25px #00000050;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.contato ul li:hover{
+    width: 180px;
+    transition: .2s;
+}
+
+.contato ul li span {
+    position: absolute;
+}
+
+.contato ul li .icon{
+    color: #ccc;
+    font-size: 2.2em;
+    transition: .2s;
+}
+
+.contato ul li .text{
+    color: #FFFFFF;
+    font-size: 20px;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+}
+
+.contato ul li:hover .text{
+    transform: scale(1);
+}
+
+.contato ul li:hover .icon{
+    transform: scale(0);
+}
+
+.contato ul li::before{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 60px;
+}
+
+.contato ul li:hover::before{
+    opacity: 1;
+}
+
+/* Logo Whatsapp */
+.whats {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9999;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+}
+
+@media (max-width: 768px){
+    /* menu */
+    .img-menu{
+        position: relative;
+        width: 100%;
+        margin: 0px 0 10px 35px;
+    }
+
+    .nome-comeco, .crp-comeco {
+        position: relative;
+        width: 100%;
+        margin: 10px 0 20px 28px;
+    }
+    /* Sobre mim*/
+    .titulo-sobre {
+        margin: 80px 0 20px 50px;
+    }
+    
+    .fotogiovanna {
+        margin: 30px 10px 60px 70px;
+        width: 80%;
+    }
+    
+    .biografia p{
+        width: 300px;
+        padding: 20px 20px;
+        text-align: justify;
+        margin: 20px 0 20px 60px;
+        line-height: 2.0;
+    }
+    
+    .botao-whatsapp {
+        width: 0 15% 15% 10%;
+    }
+    
+    /* Serviços ofertados*/
+
+    .titulo-serviços {
+        margin: 60px 0 20px 50px;
+    }
+    
+    .tipos-atendimento {
+        margin: 0px 0 10px 50px;
+    }
+    
+    .servicos {
+        margin: 20px 0 10px 50px;
+    }
+    
+    .avaliacao-psicologica{
+        width: 100%;
+        margin:50px 0px 0px 0px ;
+    }
+    .avaliacao-psicoterapia {
+        width: 100%;
+        margin:50px 15px 0px 10px ;
+    }
+    
+    .servicos h2{
+        font-size: 22px;
+    }
+    
+    .servicos li:hover h2{
+        font-size: 25px;
+        transition: 1s;
+    }
+    
+    /*Perguntas Frequentes */
+
+    .titulo-perguntas {
+        margin: 60px 0 50px 50px;
+    }
+
+    section {
+        width: 100%;
+        margin: 20px 40px 70px 0;
+    }
+
+    /* Localização */
+
+    .titulo-localizacao {
+        margin: 0px 0 20px 0px;
+    }
+
+    .mapa-conteudo{
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    /* Contato */
+
+    .contato h1 {
+        margin: 0px 0 20px 0px;
+    }
+
+    .contato ul {
+        list-style-type: none;
+        display: flex;
+        position: relative;
+        margin: 0px 10px 30px 100px;
+        gap: 40px;
+    }
+
+    footer {
+        margin: 0px 10px 0px 50px;
+    }
+
+}
+    
